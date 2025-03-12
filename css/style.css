@@ -1,28 +1,64 @@
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
 body{
-    background-color:#2f2f44;
+    background-color:#0a1b2f;
+    height: 200vh;
 }
 #wrapper1{
     display: grid;
+    margin-left: -8px;
+    margin-right: -8px;
     grid-template-columns: 50% 1fr;
-    grid-template-rows: 30vh 90vh 60vh 20vh;
+    grid-template-rows: 10vh 90vh 60vh 20vh;
     grid-template-areas: 
-    'hd hd'
+    'nv nv'
     'mn mn'
     'dv dv'
     'ft ft';
 }
-#imgbox{
-    display: grid;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-style: solid;
-    border-color:#1E1E2E;
-    grid-template-columns: 50% 1fr;
-    grid-template-rows: 50vh;
-    grid-template-areas: 
-    'sc1 sc2'
-    'sc1 sc3';
+* {box-sizing:border-box}
+
+.slideshow-container {
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+.divider{
+  margin-top: -5px;
+  background-color:#0a1b2f;
+  height: 30px;
+}
+.slidetitle{
+  font-size: 1.7rem;
+}
+.slidetextimg{
+  width: 30%;
+  margin-right: 10px;
+}
+.review{
+}
+.mySlides{
+    height: auto;
+}
+.slideimg{
+  width: 100%;
+} 
+.text {
+  display: flex;
+  flex-wrap: nowrap;
+  color:white;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: left;
+}
+#logotyp{
+    width: 35%;
+    -webkit-user-drag: none;
+}
+#menu-button{
+    width: 15%;
+    -webkit-user-drag: none;
+    margin-right: 27.5%;
 }
 #sc1{
     grid-area: sc1;
@@ -34,30 +70,31 @@ body{
     grid-area: sc3;
 }
 nav{
-    background-color: #2f2f44;
-    margin: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    color: #2f2f44;
+    grid-area: nv;
+    justify-content: left;
+    background-color:#0a1b2f;
+    padding: 10px;
+    align-items: center;
+}
+h2{
+    font-size: 1.5rem;
+    margin-right: 20px;
+    text-decoration: underline;
 }
 #aboutus{
-    background-color:#F7F7F7 ;
+    background-color:#F8F9FA;
 }
 article{
-    background-color: #8FA6D0;
+    background-color: #F8F9FA;
     color: 2D2D2D;
 }
-header{
-    display: flex;
-    flex-wrap: wrap;
-    color: #F7F7F7;
-    grid-area: hd;
-    background-color:#2f2f44;
-    justify-content:first baseline;
-    align-items: center;
-    padding: 10px;
-}
+
 main{
     grid-area: mn;
     background-color: #F8F9FA;
-    border-radius: 10px;
 }
 #divbox{
     grid-area: dv;
@@ -66,7 +103,8 @@ main{
 }
 footer{
     grid-area: ft;
-    background-color:#2f2f44;
+    background-color:#0a1b2f;
+    width: 100%;
 
 }
 }

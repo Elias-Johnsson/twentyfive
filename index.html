@@ -3,20 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>SoundStage</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div id = "wrapper1">
-      <header>
-        <h1>Titel</h1>
-        <nav>Menu</nav>
-      </header>
+      <nav>
+        <img id = "menu-button" src="img/hamburgar_iconv3.jpg" alt="Meny knapp">
+        <h1><a target="_blank" href="index.html"><img id = "logotyp" src="img/logotypv4.jpg" alt="logotyp"></a></h1>
+      </nav>
       <main>
-        <div id="imgbox">
-          <section id="sc1">s</section>
-          <section id="sc2">s</section>
-          <section id="sc3">s</section>
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <img class = "slideimg" src="img/hq720_shrek_movie_pic.jpg">
+            <div class="text">
+              <h3 class = "slidetitle">Shrek 5 officially announced</h3>
+            </div>
+          </div>
+        
+          <div class="mySlides">
+            <img class = "slideimg" src ="img/the_surfer_nic_cage.jpg">
+            <div class="text">
+              <img class ="slidetextimg" src="img/MV5BMmNjNTZiNTEtMWQ1NC00YmQ4LWFhYjktMzZhOGM2MDhmMTAxXkEyXkFqcGc@._V1_.jpg" alt="The surfer poster">
+              <div class ="slidetext">
+              <h3 class = "slidetitle">Nicolas Cage as "The Surfer"</h3>
+              <h4 class = "review">Review: </h4>
+              </div>
+            </div>
+          </div>
+        
+          <div class="mySlides">
+            <img class = "slideimg" src="img/release_radar_poster.webp">
+            <div class="text">
+              <h3 class = "slidetitle">Discover this weeks biggest hits</h3></div>
+          </div>
+        </div>
+        <div class ="divider">
         </div>
         <article id = "aboutus">article</article>
       </main>
@@ -26,5 +49,6 @@
         </div>
       <footer>footer</footer>
     </div>
+    <script src = "js/main.js"></script>
 </body>
 </html>
