@@ -8,7 +8,7 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: 33% 33% 1fr;
-    grid-template-rows: 10vh 35vh 45vh 80vh 1fr;
+    grid-template-rows: 10vh 35vh 95vh 105vh 1fr;
     grid-template-areas: 
     'nv nv nv'
     'mn mn mn'
@@ -19,6 +19,16 @@ body{
 .slideshow-container {
   height: auto;
   position: relative;
+  z-index: 3;
+}
+.movie_of_week{
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    margin-bottom: -0.5%;
 }
 .slidetitle{
   font-size: 1.7rem;
@@ -64,18 +74,20 @@ nav{
     justify-content: left;
     background-color:black;
     padding: 2%;
+    z-index: 3;
     align-items: center;
 }
 
 .movieimg{
-    margin-top: 1%;
+    margin-top: -5%;
     margin-bottom: 1%;
-    width: 40%;
+    width: 80%;
 }
 .albumimg{
     border-radius: 1%;
-    height: 10vh;
+    width: 100%;
     margin-right: 10px;
+    z-index: 3 ;
 }
 h2{
     font-size: 1.5rem;
@@ -84,10 +96,11 @@ h2{
 }
 h4{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    z-index: 3 ;
 }
 h5{
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-top: 1%;
 }
 .review_text{
@@ -110,6 +123,9 @@ h5{
 }
 .music_reviewdiv{
     display: flex;
+    flex-wrap: nowrap;
+    width: 40%;
+    height: 20%;
     border-radius: 1%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     padding: 1%;
@@ -119,6 +135,30 @@ h5{
     margin-bottom: 3%;
 
 }
+.movie-layer{
+    width: 1%;
+    top: -100vh;
+    position: relative;
+    left: 0;
+    height: 0;
+    transition: top 0.3s;
+    background-color: black;
+}
+.movie-layer.show{
+    width: 100%;
+    height: 90vh;
+    transition: top 0.5s ease;
+    top:-6vh;
+    background-color: white;
+    display: block;
+    z-index: 1;
+}
+.moviebox.up{
+    background-color: pink;
+    transition: top 0.5s ease;
+    z-index: 5;
+}
+
 #aboutus{
     width: 100%;
     flex-wrap: wrap;
@@ -129,19 +169,12 @@ h5{
 }
 .divider{
     width:90%;
-    height: 1%;
-    margin-top: -3%;
+    height: 5px;
+    margin-left: -2%;
+    margin-top: -5%;
     background-color: black;
 }
 .divider2{
-    margin-left: -2%;
-    margin-right: 4%;
-    background-color: black;
-    border-top-right-radius: 1%;
-    border-bottom-right-radius: 1%;
-    height: 1%;
-}
-.divider3{
     background-color: #F8F9FA;
     margin-left: -2%;
     margin-top: -1%;
@@ -158,6 +191,9 @@ main{
 }
 #musicbox{
     grid-area: mudiv;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     border-color: #0A0A0A;
     background-color:#F8F9FA; 
     padding-left: 1%;
@@ -166,13 +202,14 @@ main{
 #moviebox{
     grid-area: modiv;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color:#F8F9FA; 
     padding-left: 5px;
-    margin-top: -1px;
+    z-index: 2;
+    margin-top: -50%;
 }
 .footer_text{
     color: #F8F9FA;
