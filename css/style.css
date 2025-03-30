@@ -1,14 +1,17 @@
+
 @media screen and (max-width: 400px){
 body{
-    background-color:black;
+    background-color:white;
     font-family: 'Times New Roman', Times, serif;
-    width: auto;
+    width: 101%;
+    margin-left: -1%;
+    margin-top: -1%;
 }
 #wrapper1{
     width: 100%;
     display: grid;
     grid-template-columns: 33% 33% 1fr;
-    grid-template-rows: 10vh 35vh 95vh 105vh 1fr;
+    grid-template-rows: 10vh 35vh 150vh 105vh 50vh;
     grid-template-areas: 
     'nv nv nv'
     'mn mn mn'
@@ -19,13 +22,14 @@ body{
 .slideshow-container {
   height: auto;
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }
 .movie_of_week{
     width: 100%;
     font-family:Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
+    color: black;
     flex-wrap: wrap;
     font-size: 1.5rem;
     margin-bottom: -0.5%;
@@ -33,25 +37,34 @@ body{
 .slidetitle{
   font-size: 1.7rem;
   margin-left: 1%;
+  width: 100%;
 }
 .slidetextimg{
-  width: 30%;
-  margin-right: 2%;
+    width: 30%;
+    margin-right: 2%;
+    margin-bottom: 5%;
 }
 .review{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2rem;
     margin-left: 1%;
+    width: 80%;
+    height: auto;
+    margin-bottom: 5%;
 }
 .mySlides{
+    transition-duration: 1s;
+    transform-style: ease;
     height: auto;
 }
 .slideimg{
-  width: 100%;
+    width: 100%;
 } 
 .text {
   display: flex;
   font-family:'Times New Roman', Times, serif;
   flex-wrap: nowrap;
-  color:#F8F9FA;
+  color:white;
   position: absolute;
   bottom: 1%;
   width: 100%;
@@ -79,15 +92,10 @@ nav{
 }
 
 .movieimg{
-    margin-top: -5%;
-    margin-bottom: 1%;
-    width: 80%;
-}
-.albumimg{
-    border-radius: 1%;
     width: 100%;
-    margin-right: 10px;
-    z-index: 3 ;
+    background-size: cover;
+    height: auto;
+    z-index: 2;
 }
 h2{
     font-size: 1.5rem;
@@ -97,7 +105,16 @@ h2{
 h4{
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.8rem;
-    z-index: 3 ;
+}
+.MOTWtext{
+    transition-delay: 0.5s;
+    transition-duration: 3s;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    display: block;
+    color: black;
+    margin-top: 40%;
+    z-index: 2;
 }
 h5{
     font-size: 1.5rem;
@@ -107,63 +124,202 @@ h5{
     margin-top: 1%;
     margin-bottom: 1%;
 }
-.round_divider_top{
-    height: 5%;
-    width: 100%;
-    margin-top: -2%;
-    background-color: black;
-}
+
 .round_divider_bottom{
     height: 15vh;
     width: 100%;
     margin-top: -1%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    background-color: #F8F9FA;
+    background-color: black;
 }
-.music_reviewdiv{
+#rounding{
+    margin-top: -1%;
+    background-color: white;
+    width: 100%;
+    height: 10vh;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.albumimg{
+    border-radius: 1%;
+    margin: 7px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+.albumimg2{
+    border-radius: 1%;
+    margin: 7px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+.music_reviewdiv1{
     display: flex;
     flex-wrap: nowrap;
-    width: 40%;
-    height: 20%;
+    justify-content: center;
+    width: 60%;
     border-radius: 1%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    padding: 1%;
     margin-left: 1%;
     margin-right: 1%;
     margin-top: 2%;
     margin-bottom: 3%;
-
+}
+.music_reviewdiv2{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 60%;
+    border-radius: 1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+.show_music_background1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+    transition-duration: 1s;
+    transform-style: ease;
+    height: auto;
+    width: 100%;
+    background-color: #b1b1b1;
+    z-index: 3;
+}
+.show_music_background2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+    transition-duration: 1s;
+    transform-style: ease;
+    height: auto;
+    width: 100%;
+    background-color: #466254;
+    z-index: 3;
+}
+.music_reviewdivider{
+    display: none;
+}
+.show_music_divider{
+    display: block;
+    margin-top: 10%;
+    width: 90%;
+    height: 10px;
+    background-color: white;
+}
+.show_music_divider2{
+    display: block;
+    margin-top: 10%;
+    width: 90%;
+    height: 10px;
+    background-color: white;
+}
+.music_review_text1{
+    display: none;
+}
+.show_music_text1{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+.music_review_text2{
+    display: none;
+}
+.show_music_text2{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+.MOTWimage{
+    width: 70%;
 }
 .movie-layer{
-    width: 1%;
+    transition-delay: 1s;
+    transition: top 1s ease;
+    width: 0%;
     top: -100vh;
     position: relative;
     left: 0;
     height: 0;
     transition: top 0.3s;
-    background-color: black;
+    background-color: transparent;
 }
-.movie-layer.show{
+.show{
+    transition: top 2s ease;
     width: 100%;
-    height: 90vh;
-    transition: top 0.5s ease;
-    top:-6vh;
-    background-color: white;
-    display: block;
+    height: 150vh;
+    top: -1vh;
+    background-color: black;
+    z-index: 2;
+}
+.show2{
+    transition-duration: 1s;
+    display: flex;
+    transform-origin: top;
+    align-items: center;
+    height: auto;
+    background-color: black;
     z-index: 1;
 }
-.moviebox.up{
-    background-color: pink;
-    transition: top 0.5s ease;
-    z-index: 5;
+.animation1{
+    transition: top 1s ease;
+    display: none;
 }
-
+.movie_review{
+    display: none;
+}
+.animation2{
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#review_text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    padding: 15px;
+}
+.animation3{
+    width: 100%;
+    transition-delay: 3s;
+    transition-duration: 1s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+.Moviedivider{
+    transition-delay: 1s;
+    transition-duration: 0.5s;
+    display: block;
+    background-color: white;
+    margin-bottom: 30%;
+    width: 100%;
+    height: 10px;
+}
+.movieposter{
+    width: 80%;
+    margin-bottom: 10%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 #aboutus{
     width: 100%;
     flex-wrap: wrap;
     background-color:black;
-    color: #F8F9FA;
+    color: white;
     margin-left: 2%;
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -175,7 +331,7 @@ h5{
     background-color: black;
 }
 .divider2{
-    background-color: #F8F9FA;
+    background-color: white;
     margin-left: -2%;
     margin-top: -1%;
     height: 1%;
@@ -183,40 +339,45 @@ h5{
 }
 p{
     font-size: 0.8rem;
-    color: #F8F9FA;
+    color: white;
 }
 main{
     grid-area: mn;
-    background-color: #F8F9FA;
+    background-color: white;
 }
-#musicbox{
+.musicbox{
+    transition-delay: 1s;
     grid-area: mudiv;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     border-color: #0A0A0A;
-    background-color:#F8F9FA; 
+    background-color:white; 
     padding-left: 1%;
     margin-top: -1px;
 }
-#moviebox{
+.moviebox{
+    transition-delay: 0.5s;
+    transform-style: ease;
+    transition-duration: 2s;
     grid-area: modiv;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color:#F8F9FA; 
+    justify-content: top;
+    align-items: flex-start;
+    background-color:transparent; 
     padding-left: 5px;
-    z-index: 2;
-    margin-top: -50%;
+    top: 0;
+    z-index: 3;
 }
 .footer_text{
-    color: #F8F9FA;
+    color: white;
     margin-top: 3%;
 }
 footer{
     grid-area: ft;
+    background-color: black;
     display: flex;
     flex-wrap: wrap;
 }
