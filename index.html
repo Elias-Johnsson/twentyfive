@@ -13,11 +13,26 @@
 <body>
     <div id = "wrapper1">
       <nav>
-        <img id = "menu-button" src="img/hamburgar_iconv4.jpg" alt="Meny knapp">
-        <h1><a target="_blank" href="index.html"><img id = "logotyp" src="img/logotypv5.jpg" alt="logotyp"></a></h1>
+        <img class = "menu-button" src="img/hamburgar_iconv4.jpg" alt="Meny knapp">
+        <h1><a target="_blank" href="index.html#top"><img id = "logotyp" src="img/logotypv5.jpg" alt="logotyp"></a></h1>
       </nav>
       <main>
+        <div class="nav_bar">
+          <div class = "nav_part">
+            <h6 class = "album_nav"><a href="index.html#movie">MOTW</a></h6>
+          </div>
+          <div class = "nav_part">
+            <h6 class = "album_nav"><a href="index.html#music">Album reviews</a></h6>
+          </div>
+          <div class = "nav_part">
+            <h6 class = "tour_nav"><a href="index.html#tour">Tours</a></h6>
+          </div>
+          <div class = "nav_part">
+            <h6 class = "tour_nav"><a href="index.html#aboutus">About us</a></h6>
+          </div>
+        </div>
         <div class="slideshow-container">
+          <div id="top"></div>
           <div class="mySlides">
             <img class = "slideimg" src="img/hq720_shrek_movie_pic.jpg">
             <div class="text">
@@ -48,6 +63,7 @@
         <div class = "movie-layer"></div>
       </main>
         <div class ="moviebox">
+          <div id="movie"></div>
           <div class = "movie_of_week">
             <h4 class = "MOTWtext">Movie of The Week</h4>
             <div class = "divider"></div>
@@ -65,6 +81,7 @@
           </div>
         </div>
         <div class ="musicbox">
+          <div id="music"></div>
           <h4>Top Album Reviews</h4>
           <div class = "divider"></div>
           <div class = "music_reviewdiv1">
@@ -73,21 +90,65 @@
             <div class = "music_review_text1">
               <h6>Kendrick Lamar’s To Pimp a Butterfly (2015) is a masterpiece of hip-hop, blending jazz, funk, and spoken word with razor-sharp social commentary. Lyrically dense and sonically rich, it tackles race, identity, and self-worth with raw emotion and poetic brilliance. A groundbreaking album that cements Lamar’s place as one of the greatest storytellers in music.</h6>
             </div>
-            </div>
+          </div>
           <div class = "music_reviewdiv2">
             <img class = "albumimg2" src="img/MarvinGayeWhat'sGoingOnalbumcover.jpg" alt="Album4">
             <div class = "music_reviewdivider2"></div>
             <div class = "music_review_text2">
               <h6>What’s Going On (1971) is a soul masterpiece that transcends music, blending lush instrumentation with powerful social commentary. Marvin Gaye’s smooth vocals and heartfelt lyrics tackle war, injustice, and love with timeless grace. A deeply moving and essential album that remains as relevant today as ever.</h6>
             </div>
-        </div>
+          </div>
+          <div class = "music_reviewdiv3">
+            <img class = "albumimg3" src="img/rumours_fleetwoodmac.jpg" alt="Fleetword mac: Rumours">
+            <div class = "music_reviewdivider3"></div>
+            <div class = "music_review_text3">
+              <h6>Rumours (1977) is a beautifully crafted album that channels emotional chaos into timeless pop-rock perfection. With rich harmonies and unforgettable melodies, Fleetwood Mac turns personal heartbreak into universal anthems. It's a flawless blend of vulnerability and musical brilliance.</h6>
+            </div>
+          </div>
+          <div class = "music_reviewdiv4">
+            <img class = "albumimg4" src="img/the_miss_edu_lauryn_hill.jpg" alt="Fleetword mac: Rumours">
+            <div class = "music_reviewdivider4"></div>
+            <div class = "music_review_text4">
+              <h6>The Miseducation of Lauryn Hill (1998) is a soul-stirring blend of hip-hop, R&B, and reggae, delivered with unmatched honesty and grace. Lauryn Hill’s lyrical depth and vocal power make it a deeply personal and universally resonant masterpiece.</h6>
+            </div>
+          </div>
         </div>
       </div>
       <div class = "round_divider_bottom">
         <div id = "rounding"></div>
       </div>
       <footer>
+        <div class = "tour_div">
+          <div id="tour"></div>
+          <header>
+            <h3>Tours of The Year</h3>
+          </header>
+          <div class = "tour_list">
+            <div class = "tour_box1">
+              <img  class = "tour_poster"src="img/grand_national_tour_poster.jpg" alt="Tour poster, Kendrick Llamar">
+              <div class ="tour_text">
+                <h5 class = "tour_title">Kendrick & SZA: Grand Nationl Tour</h5>
+                <h6 class = "tour_date">2025 May-August</h6>
+              </div>
+            </div>
+            <div class = "tour_box2">
+              <img  class = "tour_poster"src="img/tyler_tour_poster.jpeg" alt="Tour poster, Tyler the creator">
+              <div class ="tour_text">
+                <h5 class = "tour_title">Tyler, the creator: Chromakopia Tour</h5>
+                <h6 class = "tour_date">2024 November - 2025 June</h6>
+              </div>
+            </div>
+            <div class = "tour_box3">
+              <img  class = "tour_poster"src="img/the_new_abnormal_tour_poster.png" alt="Tour poster, The Strokes">
+              <div class ="tour_text">
+                <h5 class = "tour_title">The Strokes: The New Abnormal</h5>
+                <h6 class = "tour_date">2025 November-December</h6>
+              </div>
+            </div>
+          </div>
+        </div>
         <div id = "aboutus">
+          <div id="aboutus"></div>
           <h4>
             <strong>
               About us
