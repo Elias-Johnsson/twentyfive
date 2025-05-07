@@ -1,4 +1,685 @@
+@media screen and (min-width: 400px){
+body{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    }
+#wrapper1{
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 15vh auto auto auto 50vh;
+    grid-template-areas: 
+    'nv nv nv'
+    'mn mn mn'
+    'modiv modiv modiv'
+    'mudiv mudiv mudiv'
+    'ft ft ft';
+}
+nav{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    color: #2f2f44;
+    grid-area: nv;
+    justify-content: center;
+    background-color:black;
+    margin-left: 0;
+    z-index: 3;
+    align-items: center;
+}
+main{
+    grid-area: mn;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+}
+.musicbox{
+    transition-delay: 1s;
+    grid-area: mudiv;
+    display: flex;
+    flex-wrap: nowrap;
+    border-color: #0A0A0A;
+    background-color:white; 
+    padding-left: 1%;
+}
+.moviebox{
+    transition-delay: 0.5s;
+    transform-style: ease;
+    transition-duration: 2s;
+    grid-area: modiv;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: top;
+    align-items: flex-start;
+    background-color:transparent; 
+    top: 0;
+    z-index: 3;
+}
+.nav_part{
+    justify-content: center;
+    top: -10vh;
+    width: 25%;
+    z-index: 1;
+}
+.show_nav_part{
+    justify-content: center;
+    display: flex;
+    top: 0;
+    width: 25%;
+    z-index: 1;
+}
+.MOTW_nav{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+.album_nav{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+.tour_nav{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+.aboutus_nav{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 10px;
+}
+.nav_bar{
+    display: flex;
+    top: 0;
+    margin-top: -1px;
+    height: 1px;
+    z-index: 1;
+}
+.show_navbar{
+    transition-duration: 0.5s;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+}
+.footer_text{
+    color: white;
+    margin-top: 3%;
+}
+footer{
+    grid-area: ft;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-button{
+    width: 5%;
+    -webkit-user-drag: none;
+    margin-right: 27.5%;
+}
+#logotyp{
+    margin: 10px;
+    margin-top: 20px;
+    width: 15%;
+    -webkit-user-drag: none;
+}
+.slideshow-container {
+    height: auto;
+    position: relative;
+    margin-top: 0;
+    z-index: 3;
+}
+.movie_of_week{
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: black;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+}
+.slidetitle{
+  font-size: 5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+.slidetextimg{
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.review{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2rem;
+    width: 100%;
+    height: auto;
+}
+.mySlides{
+    transition-duration: 1s;
+    transform-style: ease;
+    height: auto;
+}
+.slideimg{
+    width: 100%;
+} 
+.text {
+  display: flex;
+  font-family:'Times New Roman', Times, serif;
+  flex-wrap: nowrap;
+  justify-content: center;
+  color:white;
+  position: absolute;
+  bottom: 1%;
+  width: 100%;
+  text-align: left;
+}
+.movieimg{
+    width: 100%;
+    background-size: cover;
+    height: auto;
+    z-index: 2;
+}
+h2{
+    font-size: 1.5rem;
+    margin-right: 3%;
+    text-decoration: underline;
+}
+h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+}
+.MOTWtext{
+    transition-delay: 0.5s;
+    transition-duration: 3s;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    display: block;
+    color: black;
+    z-index: 2;
+}
+h5{
+    font-size: 1.5rem;
+}
+.round_divider_bottom{
+    height: 15vh;
+    width: 100%;
+    background-color: black;
+}
+#rounding{
+    background-color: white;
+    width: 100%;
+    height: 10vh;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.albumimg{
+    border-radius: 1%;
+    margin: 7px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+.albumimg2{
+    border-radius: 1%;
+    margin: 7px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+.albumimg3{
+    border-radius: 1%;
+    margin: 7px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+.albumimg4{
+    border-radius: 1%;
+    margin: 7px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+.albumimg5{
+    border-radius: 1%;
+    margin: 7px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+.music_reviewdiv1{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 30%;
+    border-radius: 1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+.music_reviewdiv2{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 30%;
+    border-radius: 1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+.music_reviewdiv3{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 30%;
+    border-radius: 1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+.music_reviewdiv4{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 30%;
+    border-radius: 1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+.music_reviewdiv5{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 30%;
+    border-radius: 1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+.show_music_background1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+    transition-duration: 1s;
+    transform-style: ease;
+    height: auto;
+    width: 70%;
+    background-color: #b1b1b1;
+    z-index: 3;
+}
+.show_music_background2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+    transition-duration: 1s;
+    transform-style: ease;
+    height: auto;
+    width: 70%;
+    background-color: #466254;
+    z-index: 3;
+}
+.show_music_background3{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+    transition-duration: 1s;
+    transform-style: ease;
+    height: auto;
+    width: 70%;
+    background-color: #fbf3dc;
+    z-index: 3;
+}
+.show_music_background4{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+    transition-duration: 1s;
+    transform-style: ease;
+    height: auto;
+    width: 70%;
+    background-color: #7b4a3b;
+    z-index: 3;
+}
+.show_music_background5{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+    transition-duration: 1s;
+    transform-style: ease;
+    height: auto;
+    width: 70%;
+    background-color: black;
+    z-index: 3;
+}
+.music_reviewdivider{
+    display: none;
+}
+.show_music_divider{
+    display: block;
+    margin-top: 10%;
+    width: 90%;
+    height: 10px;
+    background-color: white;
+}
+.show_music_divider2{
+    display: block;
+    margin-top: 10%;
+    width: 90%;
+    height: 10px;
+    background-color: white;
+}
+.show_music_divider3{
+    display: block;
+    margin-top: 10%;
+    width: 90%;
+    height: 10px;
+    background-color: black;
+}
+.show_music_divider4{
+    display: block;
+    margin-top: 10%;
+    width: 90%;
+    height: 10px;
+    background-color: #502306;
+}
+.show_music_divider5{
+    display: block;
+    margin-top: 10%;
+    width: 90%;
+    height: 10px;
+    background-color: white;
+}
+.music_review_text1{
+    display: none;
+}
+.show_music_text1{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+.music_review_text2{
+    display: none;
+}
+.show_music_text2{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+.music_review_text3{
+    display: none;
+}
+.show_music_text3{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+}
+.music_review_text4{
+    display: none;
+}
+.show_music_text4{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #ddac8c;
+}
+.music_review_text5{
+    display: none;
+}
+.show_music_text5{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+.MOTWimage{
+    margin-top: 40px;
+    width: 80%;
+}
+a{
+    color: white;
+}
+.movie-layer{
+    transition-delay: 1s;
+    transition: top 1s ease;
+    width: 0%;
+    top: 0;
+    position: relative;
+    left: 20%;
+    height: 0;
+    transition: top 0.3s;
+    z-index: 2;
+    background-color: pink;
+}
+.show{
+    transition: top 2s ease;
+    width: 90%;
+    height: 120vh;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 1;
+    border-radius: 20px;
+}
+.show2{
+    z-index: 2;
+    width: 100%;
+    transition-duration: 1s;
+    display: flex;
+    justify-content: left;
+    margin-top: -120vh;
+    height: 120vh;
+    background-color: green;
+}
+.animation1{
+    transition: top 1s ease;
+    display: none;
+}
+.movie_review{
+    display: none;
+}
+.animation2{
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    width: auto;
+}
+.review_text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    padding: 15px;
+}
+.change_reviewtext{
+    display: flex;
+    flex-wrap: wrap;
+    width: 150vh;
+    font-size: 1rem;
+}
+.movie_rev_title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+.animation3{
+    width: 100%;
+    transition-delay: 3s;
+    transition-duration: 1s;
+    margin-left: -40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    z-index: 2;
+}
+.Moviedivider{
+    transition-delay: 1s;
+    transition-duration: 0.5s;
+    display: block;
+    background-color: white;
+    margin-bottom: 30%;
+    width: 100%;
+    height: 10px;
+}
+.movieposter{
+    width: 80%;
+    margin-bottom: 10%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#aboutus{
+    width: 100%;
+    flex-wrap: wrap;
+    background-color:black;
+    color: white;
+    margin-left: 2%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.divider{
+    width:90%;
+    height: 5px;
+    background-color: black;
+}
+.divider2{
+    background-color: white;
+    height: 5px;
+    margin: 5px;
+    width: 80%;
+}
+p{
+    font-size: 0.8rem;
+    color: white;
+}
+main{
+    grid-area: mn;
+    z-index: 1;
+    background-color: white;
+}
+.musicbox{
+    transition-delay: 1s;
+    grid-area: mudiv;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-color: #0A0A0A;
+    background-color:white; 
+    padding-left: 1%;
+}
+.moviebox{
+    transition-delay: 0.5s;
+    transform-style: ease;
+    transition-duration: 2s;
+    grid-area: modiv;
+    width: 33%;
+    margin-left: 33%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: top;
+    align-items: flex-start;
+    background-color:transparent; 
+    top: 0;
+    z-index: 2;
+}
+.movieimg{
+    width: 50%;
+    z-index: 2;
+}
 
+.tour_div{
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    width: 90%;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+}
+.tour_list{
+    width: 100%;
+}
+.tour_box1{
+    display: flex;
+    background-color: #a0a0a0;
+    width: 100%;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+.tour_box2{
+    display: flex;
+    background-color: #01823E ;
+    width: 100%;
+    border-bottom-style: solid;
+}
+.tour_box3{
+    display: flex;
+    background-color: #3ea8d3;
+    width: 100%;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.tour_poster{
+    margin: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+}
+header{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    justify-content: center;
+    border-bottom-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 100%;
+}
+.tour_text{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
+.tour_title{
+    font-size: 2rem;
+}
+.tour_date{
+    font-size: 1rem;
+}
+}
 @media screen and (max-width: 400px){
 body{
     background-color:white;
@@ -18,6 +699,9 @@ body{
     'modiv modiv modiv'
     'mudiv mudiv mudiv'
     'ft ft ft';
+}
+.music_reviewdiv5{
+    display: none;
 }
 a{
     color: white;
@@ -83,7 +767,6 @@ html{
     color: black;
     flex-wrap: wrap;
     font-size: 1.5rem;
-    margin-bottom: -0.5%;
 }
 .slidetitle{
   font-size: 1.7rem;
@@ -404,6 +1087,10 @@ h5{
     top: -1vh;
     background-color: black;
     z-index: 2;
+}
+.movie_rev_title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
 }
 .show2{
     transition-duration: 1s;

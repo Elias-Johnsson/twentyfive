@@ -13,6 +13,8 @@ let animation5 = document.querySelector(".albumimg3")
 animation5.addEventListener("click", musicTransition3)
 let animation6 = document.querySelector(".albumimg4")
 animation6.addEventListener("click", musicTransition4)
+let animation7 = document.querySelector(".albumimg5")
+animation7.addEventListener("click", musicTransition5)
 
 showSlides();
 
@@ -29,8 +31,11 @@ function showSlides() {
 }
 
 function navbarShow(){
-  let layer = document.querySelector(".nav_bar");
-  layer.classList.toggle("show_navbar");
+  document.querySelectorAll('.nav_part').forEach(el => {
+    el.classList.add('show_nav_part');
+  });
+  let layer2 = document.querySelector(".nav_bar");
+  layer2.classList.toggle("show_navbar");
 }
 function movieTransition() {
   let layer = document.querySelector(".movie-layer");
@@ -43,6 +48,8 @@ function movieTransition() {
   part2.classList.toggle("animation2");
   let part3 = document.querySelector(".MOTWreview");
   part3.classList.toggle("animation3");
+  let part4 = document.querySelector(".review_text");
+  part4.classList.toggle("change_reviewtext");
 }
 
 function musicTransition(){
@@ -76,4 +83,12 @@ function musicTransition4(){
   layer2.classList.toggle("show_music_divider4"); 
   let layer3 = document.querySelector(".music_review_text4");
   layer3.classList.toggle("show_music_text4");
+}
+function musicTransition5(){
+  let layer = document.querySelector(".music_reviewdiv5");
+  layer.classList.toggle("show_music_background5");
+  let layer2 = document.querySelector(".music_reviewdivider5");
+  layer2.classList.toggle("show_music_divider5"); 
+  let layer3 = document.querySelector(".music_review_text5");
+  layer3.classList.toggle("show_music_text5");
 }
