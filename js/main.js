@@ -31,9 +31,8 @@ function showSlides() {
 }
 
 function navbarShow(){
-  document.querySelectorAll('.nav_part').forEach(el => {
-    el.classList.add('show_nav_part');
-  });
+  let layer1 = document.querySelector(".logotyp")
+  layer1.classList.toggle("remove_items")
   let layer2 = document.querySelector(".nav_bar");
   layer2.classList.toggle("show_navbar");
 }
